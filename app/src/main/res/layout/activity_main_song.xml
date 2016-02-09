@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sandeep.player.MainSongActivity">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:indeterminate="false"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_alignLeft="@+id/playing_song_name"
+        android:layout_alignStart="@+id/playing_song_name"
+        android:layout_marginBottom="149dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/play_btn_text"
+        android:id="@+id/buttonPlay"
+        android:layout_above="@+id/buttonNextSong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_fast_forward"
+        android:id="@+id/buttonFastForward"
+        android:layout_alignTop="@+id/buttonPlay"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:layout_toEndOf="@+id/buttonPlay"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back_ward"
+        android:id="@+id/buttonBackWard"
+        android:layout_alignTop="@+id/buttonPlay"
+        android:layout_toLeftOf="@+id/buttonPlay"
+        android:layout_toStartOf="@+id/buttonPlay"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_previous_song"
+        android:id="@+id/buttonPreviousSong"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonBackWard"
+        android:layout_alignStart="@+id/buttonBackWard"
+        android:layout_marginBottom="32dp"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_song_next"
+        android:id="@+id/buttonNextSong"
+        android:layout_alignTop="@+id/buttonPreviousSong"
+        android:layout_alignRight="@+id/buttonFastForward"
+        android:layout_alignEnd="@+id/buttonFastForward"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/playing_song_name"
+        android:textSize="20sp"
+        android:id="@+id/playing_song_name"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/timeStamp"
+        android:id="@+id/textViewTime"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

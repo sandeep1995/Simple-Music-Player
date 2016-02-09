@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Player</string>
+    <string name="songs_found">Songs Found</string>
+    <string name="songs_demo">Songs</string>
+    <string name="title_activity_songs_activity">songs_activity</string>
+    <string name="play_btn_text">||</string>
+    <string name="btn_fast_forward"><![CDATA[>>]]></string>
+    <string name="btn_back_ward"><![CDATA[<<]]></string>
+    <string name="btn_previous_song"><![CDATA[< Prev]]></string>
+    <string name="btn_song_next"><![CDATA[Next >]]></string>
+    <string name="playing_song_name">Playing Song</string>
+    <string name="timeStamp">Sandeep Acharya</string>
+</resources>
